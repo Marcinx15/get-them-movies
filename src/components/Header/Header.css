@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #081c24;
+    width: 100%;
+    z-index: 999;
+}
+
+.nav{
+    width: 1000px;
+    height: 60px;
+    margin: 0px auto;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    list-style: none;
+    line-height: 1.4em;
+}
+
+li{
+    position: relative;
+}
+
+
+a{
+    display: flex;
+    background-color:#081c24 ;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding-right: 22px;
+    padding-left: 22px;
+    height: 60px;
+    font-weight: 600;
+    font-size: 1em;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    transition: background 0.4s;
+     cursor: pointer;
+}
+
+a.logo{
+    padding: 0;
+}
+
+.logo{
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+
+a.logo:hover{
+    background-color: #081c24;
+}
+
+ a:hover{
+    background-color: rgb(47, 81, 84);
+}
+
+.DBlogo{
+    padding-top: 3px;
+    height: 54px;
+    width: 51.5px;
+}
+
+li:hover .submenu > li{
+    display: block;
+    flex-direction: column;
+    top: 0px;
+}
+
+.submenu li{
+    display: none;
+    position: relative;
+    top: 0px;
+     width: 100%;
+}
+
+.submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

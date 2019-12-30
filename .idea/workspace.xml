@@ -2,8 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="954b873a-661d-4df6-a1f3-1ae821b462fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FilmContainer/FilmContainer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FilmContainer/FilmContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PersonContainer/PersonContainer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PersonContainer/PersonContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SearchPeople/SearchPeople.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SearchPeople/SearchPeople.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SearchShows/SearchShows.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SearchShows/SearchShows.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Searchbar/Searchbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Searchbar/Searchbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ShowContainer/ShowContainer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ShowContainer/ShowContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +37,17 @@
       <option value="directory" />
     </option>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="get-them-movies" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -23,7 +55,22 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\marci\OneDrive\Desktop\get-them-movies\src\components\Main" />
+      <recent name="C:\Users\marci\OneDrive\Desktop\get-them-movies\src\components" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -48,6 +95,14 @@
       <option name="presentableId" value="Default" />
       <updated>1576424857721</updated>
       <workItem from="1576424860484" duration="617000" />
+      <workItem from="1576435706608" duration="20488000" />
+      <workItem from="1576533092889" duration="5927000" />
+      <workItem from="1576761639717" duration="25167000" />
+      <workItem from="1576861200690" duration="1202000" />
+      <workItem from="1576870554530" duration="1010000" />
+      <workItem from="1577100638934" duration="22232000" />
+      <workItem from="1577191346843" duration="5832000" />
+      <workItem from="1577454621824" duration="13981000" />
     </task>
     <servers />
   </component>
@@ -59,7 +114,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
