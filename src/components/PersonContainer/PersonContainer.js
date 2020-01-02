@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import "./PersonContainer.css"
 
-class PersonContainer extends Component{
+class PersonContainer extends Component {
     constructor() {
         super();
         this.state = {
@@ -11,15 +11,15 @@ class PersonContainer extends Component{
     }
 
 
-    componentDidMount(){
+    componentDidMount() {
         Promise.all([
             fetch("https://api.themoviedb.org/3/configuration?api_key=b6a8e4a4ab21ca2124b1ca11818dda03"),
             fetch("https://api.themoviedb.org/3/person/11701?api_key=b6a8e4a4ab21ca2124b1ca11818dda03&language=en-US")
         ])
-            .then(([res1,res2]) => {
+            .then(([res1, res2]) => {
                 return Promise.all([res1.json(), res2.json()])
             })
-            .then(([res1, res2]) =>{
+            .then(([res1, res2]) => {
                 console.log(res2);
                 this.setState({
                     base: res1,
@@ -29,7 +29,7 @@ class PersonContainer extends Component{
     }
 
     componentDidUpdate(prevProps) {
-        if (this.props.userInput !== prevProps.userInput){
+        if (this.props.userInput !== prevProps.userInput) {
             const query = "https://api.themoviedb.org/3/search/person?api_key=b6a8e4a4ab21ca2124b1ca11818dda03&language=en-US&query="
                 + this.props.userInput + "&page=1&include_adult=false";
             fetch(query)
@@ -37,7 +37,7 @@ class PersonContainer extends Component{
                 .then(data => {
                     console.log(data)
                     this.props.changeBackground(data.results[0].known_for[0].backdrop_path);
-                    fetch("https://api.themoviedb.org/3/person/"+ JSON.stringify(data.results[0].id)+"?api_key=b6a8e4a4ab21ca2124b1ca11818dda03&language=en-US")
+                    fetch("https://api.themoviedb.org/3/person/" + JSON.stringify(data.results[0].id) + "?api_key=b6a8e4a4ab21ca2124b1ca11818dda03&language=en-US")
                         .then(res => res.json())
                         .then(data => {
                                 this.setState({
@@ -49,7 +49,7 @@ class PersonContainer extends Component{
         }
     }
 
-    setPersonPoster(){
+    setPersonPoster() {
         if (this.state.base.images === undefined || this.state.person === undefined) {
             return "";
         }
@@ -57,26 +57,25 @@ class PersonContainer extends Component{
         const poster_size = "w500";
         const poster_url = this.state.person.profile_path;
 
-        return base_url+poster_size+poster_url;
+        return base_url + poster_size + poster_url;
     }
 
-     shorten(text,max) {
-        return text && text.length > max ? text.slice(0,max).split('.').slice(0, -1).join('.')+"." : text
+    shorten(text, max) {
+        return text && text.length > max ? text.slice(0, max).split('.').slice(0, -1).join('.') + "." : text
     }
 
 
+    render() {
 
-    render(){
-
-        return(
+        return (
             <div className="person_container">
                 <div className="person_poster">
-                    <img id="poster" alt="person poster" src={this.setPersonPoster()} />
+                    <img id="poster" alt="person poster" src={this.setPersonPoster()}/>
                 </div>
                 <div className="person_meta">
                     <h1>{this.state.person.name}</h1>
                     <span className="department">{this.state.person.known_for_department}</span>
-                    <p>{this.shorten(this.state.person.biography,1100)}</p>
+                    <p>{this.shorten(this.state.person.biography, 1100)}</p>
                 </div>
             </div>
         )

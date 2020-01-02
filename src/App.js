@@ -7,19 +7,19 @@ import SearchPeople from "./components/SearchPeople/SearchPeople";
 import SearchShows from "./components/SearchShows/SearchShows";
 
 function App() {
-  return (
-      <Router>
-          <div className="container">
-            <Header />
-            <Switch>
-                <Route path="/" exact component={Main} />
-                <Route path="/search_people" component={SearchPeople} />
-                <Route path="/search_shows" component={SearchShows} />
-            </Switch>
-          </div>
-      </Router>
+    return (
+        <Router>
+            <div className="container">
+                <Header/>
+                <Switch>
+                    <Route path="/" exact component={Main}/>
+                    <Route path="/search_people" component={SearchPeople}/>
+                    <Route path="/search_shows" component={SearchShows}/>
+                </Switch>
+            </div>
+        </Router>
 
-  );
+    );
 }
 
 export default App;

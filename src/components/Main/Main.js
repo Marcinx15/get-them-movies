@@ -3,10 +3,10 @@ import "./Main.css"
 import Searchbar from "../Searchbar/Searchbar";
 import FilmContainer from "../FilmContainer/FilmContainer";
 
-class Main extends Component{
-    constructor(){
+class Main extends Component {
+    constructor() {
         super();
-        this.state ={
+        this.state = {
             backgroundUrl: 'url("https://image.tmdb.org/t/p/original/hqkIcbrOHL86UncnHIsHVcVmzue.jpg")',
             userInput: ''
         };
@@ -15,26 +15,26 @@ class Main extends Component{
         this.changeBackground = this.changeBackground.bind(this);
     }
 
-    getUserInput(input){
+    getUserInput(input) {
         this.setState({
             userInput: input
         });
     }
 
-    changeBackground(posterUrl){
+    changeBackground(posterUrl) {
         const fullUrl = "https://image.tmdb.org/t/p/original" + posterUrl;
         this.setState({
-            backgroundUrl: 'url(' +fullUrl+ ')'
+            backgroundUrl: 'url(' + fullUrl + ')'
         });
     }
 
 
-    render(){
-        return(
-            <div className="outer" style={{backgroundImage: this.state.backgroundUrl }} >
+    render() {
+        return (
+            <div className="outer" style={{backgroundImage: this.state.backgroundUrl}}>
                 <div className="inner">
-                    <Searchbar getUserInput={this.getUserInput} placeholder={"What movie are you looking for?"} />
-                    <FilmContainer userInput={this.state.userInput} changeBackground={this.changeBackground}  />
+                    <Searchbar getUserInput={this.getUserInput} placeholder={"What movie are you looking for?"}/>
+                    <FilmContainer userInput={this.state.userInput} changeBackground={this.changeBackground}/>
                 </div>
             </div>
         )

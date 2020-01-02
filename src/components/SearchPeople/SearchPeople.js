@@ -3,10 +3,10 @@ import "./SearchPeople.css"
 import Searchbar from "../Searchbar/Searchbar";
 import PersonContainer from "../PersonContainer/PersonContainer";
 
-class SearchPeople extends Component{
-    constructor(){
+class SearchPeople extends Component {
+    constructor() {
         super();
-        this.state ={
+        this.state = {
             backgroundUrl: 'url("https://image.tmdb.org/t/p/original/zsGiTcMZ9yp2as3FmPMgZyil5mc.jpg")',
             userInput: ''
         };
@@ -15,26 +15,26 @@ class SearchPeople extends Component{
         this.changeBackground = this.changeBackground.bind(this);
     }
 
-    getUserInput(input){
+    getUserInput(input) {
         this.setState({
             userInput: input
         });
     }
 
-    changeBackground(posterUrl){
+    changeBackground(posterUrl) {
         const fullUrl = "https://image.tmdb.org/t/p/original" + posterUrl;
         this.setState({
-            backgroundUrl: 'url(' +fullUrl+ ')'
+            backgroundUrl: 'url(' + fullUrl + ')'
         });
     }
 
 
-    render(){
-        return(
-            <div className="outer" style={{backgroundImage: this.state.backgroundUrl }} >
+    render() {
+        return (
+            <div className="outer" style={{backgroundImage: this.state.backgroundUrl}}>
                 <div className="inner">
-                    <Searchbar getUserInput={this.getUserInput} placeholder={"Who are you looking for?"} />
-                    <PersonContainer userInput={this.state.userInput} changeBackground={this.changeBackground}  />
+                    <Searchbar getUserInput={this.getUserInput} placeholder={"Who are you looking for?"}/>
+                    <PersonContainer userInput={this.state.userInput} changeBackground={this.changeBackground}/>
                 </div>
             </div>
         )

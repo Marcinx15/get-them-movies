@@ -3,11 +3,11 @@ import "./Header.css"
 import Logo from "../../img/movieDBlogo.png"
 import {Link} from 'react-router-dom'
 
-class Header extends Component{
+class Header extends Component {
 
 
     render() {
-        return(
+        return (
             <div className="header">
 
                 <div className="nav">
@@ -15,7 +15,7 @@ class Header extends Component{
                         <li>
                             <div className="logo">
                                 <a className="logo" href="https://www.themoviedb.org/">
-                                    <img className="DBlogo" src={Logo}  alt="The Movie DB" />
+                                    <img className="DBlogo" src={Logo} alt="The Movie DB"/>
                                 </a>
                             </div>
                         </li>
@@ -30,7 +30,7 @@ class Header extends Component{
 
                                 <li>
                                     <Link to="/search_shows">
-                                    <span>TV SHOWS</span>
+                                        <span>TV SHOWS</span>
                                     </Link>
                                 </li>
 
@@ -46,7 +46,7 @@ class Header extends Component{
                         </li>
                         <li>
                             <a className="dropdown">
-                              ABOUT US
+                                ABOUT US
                             </a>
                         </li>
                     </ul>

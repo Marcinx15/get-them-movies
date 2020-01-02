@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 
-.TopBar{
+.TopBar {
     display: flex;
     margin-top: 50px;
     justify-content: center;
@@ -10,12 +10,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.searchBar{
+.searchBar {
     width: 50%;
     position: relative;
 }
 
-.searchBar input[type="text"]{
+.searchBar input[type="text"] {
     width: 100%;
     padding: 15px;
     padding-right: 60px;
@@ -24,28 +24,28 @@
     border: 4px solid #00FC87;
     border-radius: 10px;
     font-size: 22px;
-    color:white;
+    color: white;
     outline: none;
 }
 
-::-webkit-input-placeholder{
+::-webkit-input-placeholder {
     color: #fff;
 }
 
-::-moz-placeholder{
+::-moz-placeholder {
     color: #fff;
 }
 
-::-ms-input-placeholder{
+::-ms-input-placeholder {
     color: #fff;
 }
 
-.fa-search{
+.fa-search {
     color: #fff;
     font-size: 20px;
 }
 
-.submit-btn{
+.submit-btn {
     position: absolute;
     top: 50%;
     right: 25px;
