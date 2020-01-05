@@ -1,0 +1,33 @@
+.image {
+    background-image: url(https://www.the-guild.eu/members/about-our-members/jagiellonian_2.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 95vh;
+    top: 5vh;
+}
+
+.top {
+    position: absolute;
+    height: 100%;
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.38;
+}
+
+.text {
+    color: #fff;
+    font-size: 1.1em;
+    font-family: Oswald, sans-serif;
+    padding: 30% 20px 20px 20px;
+    background-color: rgb(6,23,31);
+    word-wrap: break-word;
+    height: 100%;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 1.15em;
+}

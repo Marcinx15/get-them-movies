@@ -1,0 +1,33 @@
+.contact {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.contact .background::after{
+    background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    filter: grayscale(50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-section {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.contact-parallel::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: 100%;
+    z-index: -1;
+}
+

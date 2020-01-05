@@ -27,13 +27,11 @@ class Header extends Component {
                                         <span>MOVIES</span>
                                     </Link>
                                 </li>
-
                                 <li>
                                     <Link to="/search_shows">
                                         <span>TV SHOWS</span>
                                     </Link>
                                 </li>
-
                                 <li>
                                     <Link to="/search_people">
                                         <span>PEOPLE</span>
@@ -43,11 +41,31 @@ class Header extends Component {
                         </li>
                         <li>
                             <a className="dropdown">RANKINGS</a>
+                            <ul className="submenu">
+                                <li>
+                                    <Link to="/top_movies">
+                                        <span>TOP MOVIES</span>
+                                    </Link>
+                                </li>
+
+                            </ul>
                         </li>
                         <li>
                             <a className="dropdown">
-                                ABOUT US
+                                ABOUT
                             </a>
+                            <ul className="submenu">
+                                <li>
+                                    <Link to="/about_us">
+                                        <span>ABOUT US</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/info">
+                                        <span>INFO</span>
+                                    </Link>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
