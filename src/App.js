@@ -7,6 +7,7 @@ import SearchPeople from "./components/SearchPeople/SearchPeople";
 import SearchShows from "./components/SearchShows/SearchShows";
 import Info from "./components/Info/Info";
 import AboutUs from "./components/AboutUs/AboutUs";
+import TopMovies from "./components/TopMovies/TopMovies";
 
 function App() {
     return (
@@ -17,7 +18,7 @@ function App() {
                     <Route path="/" exact component={Main}/>
                     <Route path="/search_people" component={SearchPeople}/>
                     <Route path="/search_shows" component={SearchShows}/>
-                    <Route path="/top_movies" component={SearchShows}/>
+                    <Route path="/top_movies" component={TopMovies}/>
                     <Route path="/about_us" component={AboutUs}/>
                     <Route path="/info" component={Info}/>
                 </Switch>

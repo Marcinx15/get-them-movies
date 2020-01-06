@@ -14,16 +14,16 @@ class CardHeader extends React.Component {
     }
 }
 
+
 class Card extends React.Component {
     render() {
         return (
-            <article className="card" onClick={this.props.onClick}>
+            <article className="card">
                 <CardHeader image={"https://image.tmdb.org/t/p/w500/" + this.props.movie.backdrop_path}/>
                 <div className="card-body">
                     <p className="date">{this.props.movie.release_date}</p>
                     <h4>{this.props.movie.title}</h4>
-                    <p className="body-content">{this.props.movie.overview.slice(0, 200) + "..."}</p>
-                    <button className="button button-primary">
+                    <button className="button-primary">
                         <i className="fa fa-star"/> {this.props.movie.vote_average + "/10"}
                     </button>
                 </div>
