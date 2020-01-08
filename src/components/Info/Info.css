@@ -16,6 +16,10 @@
     opacity: 0.38;
 }
 
+.top:hover {
+    opacity: 0.65;
+}
+
 .text {
     color: #fff;
     font-size: 1.1em;

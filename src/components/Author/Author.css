@@ -58,4 +58,16 @@
     text-decoration: none;
     cursor: pointer;
     border: 3px solid #00FC87;
+    transform: scale(1.2);
+}
+
+.bg2::after {
+    background-image: url('https://1.bp.blogspot.com/-o1JTOIzr1SA/XObqEjPBUYI/AAAAAAAACIY/AvYmQacMQBYTeiQD7C6WZCzBiYQfols3gCLcBGAs/s1600/10-Hausmittel-gegen-Sodbrennen-Ernaehrung.jpg');
+    filter: grayscale(85%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex {
+    display: flex;
 }

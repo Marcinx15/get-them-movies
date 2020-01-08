@@ -1,17 +1,30 @@
-.contact {
+.container {
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
+    perspective: 2px;
 }
 
-.contact .background::after{
+.container .background::after{
     background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-    filter: grayscale(50%);
+    filter: grayscale(70%);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.contact-section {
+.container .background2::after {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/598c684cf14aa18c52ae31bb/1571698263788-22N1EVWNKD5U2XY803JC/ke17ZwdGBToddI8pDm48kNvT88LknE-K9M4pGNO0Iqd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1USOFn4xF8vTWDNAUBm5ducQhX-V3oVjSmr829Rco4W2Uo49ZdOtO_QXox0_W7i2zEA/Website+Background.jpg?format=1500w');
+    filter: grayscale(70%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.flex {
+    display: flex;
+}
+
+.section {
     position: relative;
     height: 100%;
     display: flex;
@@ -20,14 +33,46 @@
     color: white;
 }
 
-.contact-parallel::after {
+.parallel::after {
     content: '';
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    transform: translateZ(-1px) scale(1.55);
     background-size: 100%;
     z-index: -1;
+}
+
+.bar {
+    background-image: url("https://i.ytimg.com/vi/uNCr7NdOJgw/maxresdefault.jpg");
+    background-size: cover;
+    filter: grayscale(35%);
+    position: relative;
+    opacity: 99%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 0 10px #000;
+    font-size: 30px;
+}
+
+.bar2 {
+    background-image: url("http://images.unsplash.com/photo-1539946309076-4daf2ea73899?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: sepia(100%);
+    opacity: 95%;
+    position: relative;
+    height: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    text-shadow: 0 0 5px #000;
 }
 

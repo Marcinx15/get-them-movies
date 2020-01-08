@@ -2,7 +2,6 @@ import * as React from 'react';
 import './TopMovies.css';
 import Card from '../MovieCard/MovieCard'
 import axios from 'axios';
-import InfiniteScroll from "react-infinite-scroll-component";
 
 class TopMovies extends React.Component {
     constructor(props) {

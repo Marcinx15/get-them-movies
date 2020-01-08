@@ -2,13 +2,14 @@ import React, {Component} from 'react';
 
 import "./AboutUs.css"
 import Author from "../Author/Author";
+import Contact from "./Contact";
 
 
 export default class AboutUs extends Component {
     render() {
         return (
-            <div className="contact">
-                <section className="contact-section contact-parallel background">
+            <div className="container">
+                <section className="section parallel background">
                     <Author
                         photo="https://media.licdn.com/dms/image/C4D03AQFKNAEL9UNs2A/profile-displayphoto-shrink_200_200/0?e=1583971200&v=beta&t=PwOyeDoN6CPNNXIhwFhri3jPK6a6W1HFk1Hg5ss24Sg"
                         name="Dawid Szczerba"
@@ -27,6 +28,17 @@ export default class AboutUs extends Component {
                         github="https://github.com/Marcinx15"
                         spotify="https://spotify.com"
                     />
+                </section>
+                <section className="bar">
+                    <h1>If you want to contact us, scroll down.</h1>
+                    <br/><br/>
+                </section>
+                <section className="section parallel background2">
+                <Contact name='Dawid' mail='dawid100298@o2.pl' telephone="564896324" skypeAddress="DawidSzczerba"/>
+                <Contact name='Marcin' mail='marcin16@gmail.com' telephone="756985634" skypeAddress="MarcinX"/>
+                </section>
+                <section className="bar2">
+                    <h1>Thank you for visiting our website.</h1>
                 </section>
             </div>
         );
