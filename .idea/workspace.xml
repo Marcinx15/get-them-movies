@@ -3,16 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="954b873a-661d-4df6-a1f3-1ae821b462fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FilmContainer/FilmContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FilmContainer/FilmContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PersonContainer/PersonContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PersonContainer/PersonContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Searchbar/Searchbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Searchbar/Searchbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Searchbar/Searchbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Searchbar/Searchbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ShowContainer/ShowContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ShowContainer/ShowContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AboutUs/AboutUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutUs/AboutUs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AboutUs/Contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/Contact.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AboutUs/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/Contact.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +50,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Desktop\get-them-movies\get-them-movies\src\components\Contact" />
       <recent name="C:\Users\marci\OneDrive\Desktop\get-them-movies\src\components\Main" />
       <recent name="C:\Users\marci\OneDrive\Desktop\get-them-movies\src\components" />
     </key>
