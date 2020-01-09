@@ -31,23 +31,25 @@ class ShowContainer extends Component {
 
     componentDidUpdate(prevProps) {
         if (this.props.userInput !== prevProps.userInput) {
-            const query = "https://api.themoviedb.org/3/search/movie?api_key=b6a8e4a4ab21ca2124b1ca11818dda03&language=en-US&query="
+            const query = "https://api.themoviedb.org/3/search/tv?api_key=b6a8e4a4ab21ca2124b1ca11818dda03&language=en-US&query="
                 + this.props.userInput + "&page=1&include_adult=false";
             fetch(query)
-                .then(res => res.json())
-                .then(data => {
-                    fetch("https://api.themoviedb.org/3/movie/" + JSON.stringify(data.results[0].id) + "?api_key=b6a8e4a4ab21ca2124b1ca11818dda03&language=en-US")
-                        .then(res => res.json())
+                .then(res =>{
+                    res.json()
                         .then(data => {
-                                this.setState({
-                                    movie: data
-                                });
-                                this.props.changeBackground(data.backdrop_path);
+                            if(data.total_results !== 0) {
+                                fetch("https://api.themoviedb.org/3/tv/" + JSON.stringify(data.results[0].id) + "?api_key=b6a8e4a4ab21ca2124b1ca11818dda03&language=en-US")
+                                    .then(res => res.json())
+                                    .then(data => {
+                                            this.setState({
+                                                show: data
+                                            });
+                                            this.props.changeBackground(data.backdrop_path);
+                                        }
+                                    );
                             }
-                        );
-                });
-
-
+                        })
+                })
         }
     }
 
@@ -85,6 +87,32 @@ class ShowContainer extends Component {
                     <p>{this.state.show.overview}</p>
                     <div className="genres">
                         <p>{genres}</p>
+                    </div>
+                    <div className="details">
+                        <div className="box">
+                            <p>Average score:</p>
+                            <span>{this.state.show.vote_average} / 10 </span>
+                        </div>
+                        <div className="box">
+                            <p>Vote count:</p>
+                            <span>{this.state.show.vote_count} </span>
+                        </div>
+                        <div className="box">
+                            <p>No. seasons:</p>
+                            <span>{this.state.show.number_of_seasons} </span>
+                        </div>
+                        <div className="box">
+                            <p>No. episodes:</p>
+                            <span>{this.state.show.number_of_episodes} </span>
+                        </div>
+                        <div className="box">
+                            <p>Status:</p>
+                            <span>{this.state.show.status} </span>
+                        </div>
+                        <div className="box">
+                            <p>First air date:</p>
+                            <span>{this.state.show.first_air_date} </span>
+                        </div>
                     </div>
                 </div>
             </div>

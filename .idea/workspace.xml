@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="954b873a-661d-4df6-a1f3-1ae821b462fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/AboutUs/Contact.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AboutUs/Contact.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutUs/AboutUs.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutUs/AboutUs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutUs/AboutUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutUs/AboutUs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Author/Author.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Author/Author.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Info/Info.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Info/Info.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TopMovies/TopMovies.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopMovies/TopMovies.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TopMovies/TopMovies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopMovies/TopMovies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FilmContainer/FilmContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FilmContainer/FilmContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PersonContainer/PersonContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PersonContainer/PersonContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Searchbar/Searchbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Searchbar/Searchbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Searchbar/Searchbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Searchbar/Searchbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ShowContainer/ShowContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ShowContainer/ShowContainer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -113,6 +115,8 @@
       <workItem from="1577985396943" duration="3681000" />
       <workItem from="1578336218456" duration="2413000" />
       <workItem from="1578480041340" duration="17811000" />
+      <workItem from="1578522246238" duration="10534000" />
+      <workItem from="1578534490177" duration="1273000" />
     </task>
     <servers />
   </component>

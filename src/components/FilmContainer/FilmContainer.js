@@ -30,23 +30,27 @@ class FilmContainer extends Component {
     }
 
     componentDidUpdate(prevProps) {
-        if (this.props.userInput !== prevProps.userInput) {
-            const query = "https://api.themoviedb.org/3/search/movie?api_key=b6a8e4a4ab21ca2124b1ca11818dda03&language=en-US&query="
-                + this.props.userInput + "&page=1&include_adult=false";
-            fetch(query)
-                .then(res => res.json())
-                .then(data => {
-                    fetch("https://api.themoviedb.org/3/movie/" + JSON.stringify(data.results[0].id) + "?api_key=b6a8e4a4ab21ca2124b1ca11818dda03&language=en-US")
-                        .then(res => res.json())
-                        .then(data => {
-                                this.setState({
-                                    movie: data
-                                });
-                                this.props.changeBackground(data.backdrop_path);
-                            }
-                        );
-                });
-        }
+            if (this.props.userInput !== prevProps.userInput) {
+                const query = "https://api.themoviedb.org/3/search/movie?api_key=b6a8e4a4ab21ca2124b1ca11818dda03&language=en-US&query="
+                    + this.props.userInput + "&page=1&include_adult=false";
+                fetch(query)
+                    .then(res => {
+                        res.json()
+                            .then(data => {
+                                console.log(data.total_results)
+                                if(data.total_results !== 0){
+                                fetch("https://api.themoviedb.org/3/movie/" + JSON.stringify(data.results[0].id) + "?api_key=b6a8e4a4ab21ca2124b1ca11818dda03&language=en-US")
+                                    .then(res => res.json())
+                                    .then(data => {
+                                            this.setState({
+                                                movie: data
+                                            });
+                                            this.props.changeBackground(data.backdrop_path);
+                                        }
+                                    );
+                            }});
+                        })
+                    }
     }
 
 

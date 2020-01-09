@@ -33,6 +33,7 @@ class Searchbar extends Component {
                 <div className="searchBar">
                     <form onSubmit={this.handleSubmit}>
                         <input
+                            autoComplete="off"
                             type="text"
                             value={this.state.userInput}
                             name="userInput"

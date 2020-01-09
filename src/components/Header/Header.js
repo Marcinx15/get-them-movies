@@ -14,7 +14,7 @@ class Header extends Component {
                     <ul>
                         <li>
                             <div className="logo">
-                                <a className="logo" href="https://www.themoviedb.org/">
+                                <a className="logo" target="_blank" rel="noopener noreferrer" href="https://www.themoviedb.org/">
                                     <img className="DBlogo" src={Logo} alt="The Movie DB"/>
                                 </a>
                             </div>

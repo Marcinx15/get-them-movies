@@ -8,6 +8,8 @@ class PersonContainer extends Component {
             base: {},
             person: {}
         };
+        this.setPersonPoster = this.setPersonPoster.bind(this);
+        this.shorten = this.shorten.bind(this);
     }
 
 
@@ -20,7 +22,6 @@ class PersonContainer extends Component {
                 return Promise.all([res1.json(), res2.json()])
             })
             .then(([res1, res2]) => {
-                console.log(res2);
                 this.setState({
                     base: res1,
                     person: res2
@@ -33,19 +34,23 @@ class PersonContainer extends Component {
             const query = "https://api.themoviedb.org/3/search/person?api_key=b6a8e4a4ab21ca2124b1ca11818dda03&language=en-US&query="
                 + this.props.userInput + "&page=1&include_adult=false";
             fetch(query)
-                .then(res => res.json())
-                .then(data => {
-                    console.log(data)
-                    this.props.changeBackground(data.results[0].known_for[0].backdrop_path);
-                    fetch("https://api.themoviedb.org/3/person/" + JSON.stringify(data.results[0].id) + "?api_key=b6a8e4a4ab21ca2124b1ca11818dda03&language=en-US")
-                        .then(res => res.json())
+                .then(res => {
+                    res.json()
                         .then(data => {
-                                this.setState({
-                                    person: data
-                                });
+                            if(data.total_results !== 0) {
+                                console.log(data.results[0])
+                                if(data.results[0].known_for.length !== 0)
+                                    this.props.changeBackground(data.results[0].known_for[0].backdrop_path);
+                                fetch("https://api.themoviedb.org/3/person/" + JSON.stringify(data.results[0].id) + "?api_key=b6a8e4a4ab21ca2124b1ca11818dda03&language=en-US")
+                                    .then(res => res.json())
+                                    .then(data => {
+                                        this.setState({
+                                            person: data
+                                        })}
+                                    );
                             }
-                        );
-                });
+                        });
+                })
         }
     }
 

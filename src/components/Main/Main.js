@@ -31,10 +31,13 @@ class Main extends Component {
 
     render() {
         return (
-            <div className="outer" style={{backgroundImage: this.state.backgroundUrl}}>
-                <div className="inner">
-                    <Searchbar getUserInput={this.getUserInput} placeholder={"What movie are you looking for?"}/>
-                    <FilmContainer userInput={this.state.userInput} changeBackground={this.changeBackground}/>
+            <div className="background" style={{backgroundImage: this.state.backgroundUrl, backgroundSize: 'cover',
+                height: '120vh',backgroundAttachment: 'scroll', backgroundPosition: 'center'}}>
+                <div className="outer">
+                    <div className="inner">
+                        <Searchbar getUserInput={this.getUserInput} placeholder={"What movie are you looking for?"}/>
+                        <FilmContainer userInput={this.state.userInput} changeBackground={this.changeBackground}/>
+                    </div>
                 </div>
             </div>
         )
