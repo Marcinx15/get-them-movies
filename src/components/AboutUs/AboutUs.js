@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import "./AboutUs.css"
 import Author from "../Author/Author";
-import Contact from "./Contact";
+import Contact from "../Contact/Contact";
 
 
 export default class AboutUs extends Component {

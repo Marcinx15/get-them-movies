@@ -9,7 +9,10 @@
     "create-react-app": "^3.3.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0"
+    "react-scripts": "3.3.0",
+    "axios": "latest",
+    "react-infinite-scroll-component": "latest",
+    "semantic-ui-react": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
