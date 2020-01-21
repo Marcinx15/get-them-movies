@@ -75,9 +75,7 @@ class TopMovies extends Component {
     render() {
 
         return <InfiniteScroll
-            pageStart={0}
             next={this.getMoreMovies}
-            dataLength={this.state.cardData.length}
             hasMore={true}
             loader={<Loader>...</Loader>}
             endMessage={

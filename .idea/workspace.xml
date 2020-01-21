@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="954b873a-661d-4df6-a1f3-1ae821b462fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutUs/AboutUs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutUs/AboutUs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutUs/Contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/Contact.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutUs/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/Contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MovieCard/MovieCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MovieCard/MovieCard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TopMovies/TopMovies.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopMovies/TopMovies.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TopMovies/TopMovies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopMovies/TopMovies.js" afterDir="false" />
     </list>

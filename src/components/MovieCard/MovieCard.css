@@ -1,7 +1,7 @@
 .card {
     width:250px;
     font-family: Oswald, sans-serif;
-    display: inline-block;
+    //display: inline-block;
     margin: 60px 40px auto;
     transition: .10s;
     text-align: center;
