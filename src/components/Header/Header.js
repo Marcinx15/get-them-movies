@@ -47,6 +47,16 @@ class Header extends Component {
                                         <span>TOP MOVIES</span>
                                     </Link>
                                 </li>
+                                <li>
+                                    <Link to="/popular_movies">
+                                        <span>POPULAR MOVIES</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/latest_movies">
+                                        <span>LATEST MOVIES</span>
+                                    </Link>
+                                </li>
 
                             </ul>
                         </li>
