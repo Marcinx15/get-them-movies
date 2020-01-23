@@ -2,15 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="954b873a-661d-4df6-a1f3-1ae821b462fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/LatestMovies/LatestMovies.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PopularMovies/PopularMovies.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/exercise.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/user.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/bin/nodemon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/bin/postinstall.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/commitlint.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/cli/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/cli/parse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/config/command.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/config/defaults.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/config/exec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/config/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/config/load.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/help/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/monitor/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/monitor/match.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/monitor/run.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/monitor/signals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/monitor/watch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/nodemon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/rules/add.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/rules/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/rules/parse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/spawn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/utils/bus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/utils/clone.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/utils/colour.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/utils/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/utils/log.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/utils/merge.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/lib/version.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/node_modules/nodemon/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/routes/exercises.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/routes/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TopMovies/TopMovies.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopMovies/TopMovies.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TopMovies/TopMovies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopMovies/TopMovies.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +68,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1V1e76f0Mevlb91cusO6P5MA4Lz" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -116,6 +149,7 @@
       <workItem from="1578480041340" duration="17811000" />
       <workItem from="1578522246238" duration="10534000" />
       <workItem from="1578534490177" duration="1273000" />
+      <workItem from="1579816895906" duration="8000" />
     </task>
     <servers />
   </component>
@@ -134,5 +168,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
