@@ -1,12 +1,67 @@
 import React, {Component} from 'react'
 import "./Header.css"
 import Logo from "../../img/movieDBlogo.png"
-import {Link} from 'react-router-dom'
+import {Link, withRouter} from 'react-router-dom'
+import auth from "../Auth/Auth"
 
 class Header extends Component {
+    logOut(e){
+        e.preventDefault();
+        localStorage.removeItem('usertoken');
+        auth.logout()
+        this.props.history.push(`/`)
+    };
 
 
     render() {
+        const loginRegLink = (
+            <ul className="submenu">
+                <li>
+                    <Link to="/login">
+                        <span>LOGIN</span>
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/register">
+                        <span>REGISTER</span>
+                    </Link>
+                </li>
+            </ul>
+        );
+
+        const userLink = (
+            <ul className="submenu">
+                <li >
+                    <Link to="/profile">
+                        <span>USER</span>
+                    </Link>
+                </li>
+                <li >
+                    <a href="" onClick={this.logOut.bind(this)}>
+                        <span>LOGOUT</span>
+                    </a>
+                </li>
+            </ul>
+        );
+
+        const support = (
+            <li>
+                <a className="dropdown">
+                    SUPPORT
+                </a>
+                <ul className="submenu">
+                    <li>
+                        <Link to="/add_movie">
+                            <span>ADD MOVIE</span>
+                        </Link>
+                    </li>
+                </ul>
+            </li>
+        );
+
+
+
+
         return (
             <div className="header">
 
@@ -77,6 +132,13 @@ class Header extends Component {
                                 </li>
                             </ul>
                         </li>
+                        {localStorage.usertoken ? support : ""}
+                        <li>
+                        <a className="dropdown">
+                            ACCOUNT
+                        </a>
+                        {localStorage.usertoken ? userLink : loginRegLink}
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -84,4 +146,4 @@ class Header extends Component {
     }
 }
 
-export default Header
+export default withRouter(Header);

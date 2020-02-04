@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
@@ -10,8 +10,16 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import TopMovies from "./components/TopMovies/TopMovies";
 import PopularMovies from "./components/PopularMovies/PopularMovies";
 import LatestMovies from "./components/LatestMovies/LatestMovies";
+import AddMovie from "./components/AddMovie/AddMovie";
+import Login from "./components/Login/Login";
+import Register from "./components/Register/Register";
+import User from "./components/User/User"
+import {ProtectedRoute} from "./components/Auth/protected.route"
+
+
 
 function App() {
+
     return (
         <Router>
             <div className="container">
@@ -25,6 +33,11 @@ function App() {
                     <Route path="/latest_movies" component={LatestMovies}/>
                     <Route path="/about_us" component={AboutUs}/>
                     <Route path="/info" component={Info}/>
+                    {/*<Route path="/add_movie" component={AddMovie}/>*/}
+                    <Route path="/login" component = {Login} />
+                    <Route path="/register" component = {Register} />
+                    <Route path="/profile" component = {User} />
+                    <ProtectedRoute exact path="/add_movie" component={AddMovie} />
                 </Switch>
             </div>
         </Router>

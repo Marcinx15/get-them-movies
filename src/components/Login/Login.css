@@ -1,0 +1,18 @@
+.zx1{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+    align-items: center;
+
+}
+
+.zx{
+    display: flex;
+    margin: 50px auto;
+    width: 920px;
+    min-height: 575px;
+    height: auto;
+    border-radius: 5px;
+}
